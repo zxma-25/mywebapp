@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Browsing App</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Car Browsing App</h1>
+    </header>
+    <main>
+        <section id="search">
+            <h2>Search for Car Brands</h2>
+            <select id="brand-dropdown" onchange="filterCars()">
+                <option value="">All Brands</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Ford">Ford</option>
+                <option value="Tesla">Tesla</option>
+                <option value="BMW">BMW</option>
+            </select>
+        </section>
+        <section id="car-list">
+            <h2>Available Cars</h2>
+            <div id="cars">
+                <div class="car" data-brand="Toyota">
+                    <img src="assets/images/corolla.png" alt="Toyota Corolla" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
+                    Toyota - Corolla
+                </div>
+                <div class="car" data-brand="Honda">
+                    <img src="assets/images/4d7389997d1726e124aa615b25206e1e.png" alt="Honda Civic" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
+                    Honda - Civic
+                </div>
+                <div class="car" data-brand="Ford">
+                    <img src="assets/images/mustang.png" alt="Ford Mustang" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
+                    Ford - Mustang
+                </div>
+                <div class="car" data-brand="Tesla">
+                    <img src="assets/images/7a5f914a6246d5f4b47cf239e54897a4.png" alt="Tesla Model S" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
+                    Tesla - Model S
+                </div>
+                <div class="car" data-brand="BMW">
+                    <img src="assets/images/bmw-x5.png" alt="BMW X5" style="width: 100%; border-radius: 8px; margin-bottom: 0.5rem;">
+                    BMW - X5
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Car Browsing App</p>
+    </footer>
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
