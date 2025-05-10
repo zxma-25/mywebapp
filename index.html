@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Product Vendor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        header {
+            background-color: #1e1e1e;
+            color: #ffffff;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1e1e1e;
+        }
+        nav a {
+            color: #e0e0e0;
+            padding: 1rem;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background-color: #242424;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+            background: linear-gradient(to right, #333333, #444444);
+            color: #ffffff;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+        .product-card {
+            background: #1e1e1e;
+            border-radius: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            text-align: center;
+            padding: 1rem;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #333333;
+        }
+        .product-card h3 {
+            margin: 1rem 0 0.5rem;
+            color: #ffffff;
+        }
+        .product-card p {
+            color: #b0b0b0;
+            font-size: 0.9rem;
+        }
+        .product-card button {
+            background-color: #2463d8;
+            color: #ffffff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        .product-card button:hover {
+            background-color: #025b85;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Modern Vendor</h1>
+        <p>Your one-stop shop for quality products</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Welcome to Modern Vendor</h1>
+        <p>Discover the best products at unbeatable prices</p>
+    </section>
+    <section id="products" class="products">
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>High-quality product for your needs</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Reliable and affordable</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product-card">
+            <img src="https://via.placeholder.com/300" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Top-notch performance guaranteed</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2023 Modern Vendor. All rights reserved.</p>
+    </footer>
+</body>
+</html>
